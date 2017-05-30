@@ -16,8 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        // Changes the navigationbarbuttonitem
         
+        UINavigationBar.appearance().tintColor = UIColor.white    
         
+        let navigationFont = UIFont(name: "AvenirNext-Regular" , size: 18)!
+        let navigationFontAttribures = [NSFontAttributeName : navigationFont]
+        
+        UINavigationBar.appearance().titleTextAttributes = navigationFontAttribures
+        UIBarButtonItem.appearance().setTitleTextAttributes(navigationFontAttribures, for: .normal)
+        
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
+
         
         return true
     }

@@ -17,11 +17,11 @@ class ViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         navigationItem.title = "Whitehouse"
-        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
-        //TODO: need to change color for the backbarbuttonitem
         navigationController?.navigationBar.barTintColor = UIColor(red: 118/255, green: 166/255, blue: 239/255, alpha: 1.0)
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
+        //self.navigationController?.hidesBarsOnSwipe = true
         
         self.tableView.backgroundColor = UIColor(red: 240/255.0, green: 240/255.0, blue: 240/255.0, alpha: 1)
         
