@@ -52,7 +52,7 @@
                                         <constraint firstItem="hgX-ip-YqX" firstAttribute="top" secondItem="6DG-vS-DqU" secondAttribute="top" constant="10" id="bUf-nd-hWX"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.001050715334713459" green="0.47925478219985962" blue="0.9988587498664856" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.9999127984046936" green="1" blue="0.99988144636154175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="labelBackgroundView" destination="hgX-ip-YqX" id="MgN-1s-3DX"/>
                                     <outlet property="titleLabel" destination="I4Y-xY-giv" id="Eyc-UZ-ue2"/>
@@ -79,9 +79,10 @@
                 <navigationController storyboardIdentifier="NavController" automaticallyAdjustsScrollViewInsets="NO" id="VAy-Xh-NZd" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="mostRecent" id="Tew-HC-KUj"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MTZ-b4-de8">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="MTZ-b4-de8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

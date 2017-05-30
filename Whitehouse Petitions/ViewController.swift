@@ -18,6 +18,10 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Whitehouse"
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        //TODO: need to change color for the backbarbuttonitem
+        navigationController?.navigationBar.barTintColor = UIColor(red: 118/255, green: 166/255, blue: 239/255, alpha: 1.0)
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
         
         self.tableView.backgroundColor = UIColor(red: 240/255.0, green: 240/255.0, blue: 240/255.0, alpha: 1)
         
@@ -53,7 +57,7 @@ class ViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //self.tableView.separatorStyle = .none
+        self.tableView.separatorStyle = .none
         return petitions.count
     }
     
