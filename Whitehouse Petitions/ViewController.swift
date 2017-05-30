@@ -15,11 +15,11 @@ class ViewController: UITableViewController {
     
     @IBOutlet var myTableView: UITableView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         navigationItem.title = "Whitehouse"
+        
+        self.tableView.backgroundColor = UIColor(red: 240/255.0, green: 240/255.0, blue: 240/255.0, alpha: 1)
         
             // Points to server
             let urlString = "https://api.whitehouse.gov/v1/petitions.json?limit=20"
@@ -60,6 +60,7 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell", for: indexPath) as! CustomTableViewCell
+        cell.backgroundColor = UIColor.clear
         
         let petition = petitions[indexPath.row]
         cell.titleLabel?.text = petition["title"]

@@ -16,13 +16,13 @@ class CustomTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 
-        labelBackgroundView.layer.borderWidth = 0.5
-        labelBackgroundView.layer.borderColor = UIColor.lightGray.cgColor
-        labelBackgroundView.layer.shadowColor = UIColor.lightGray.cgColor
+        labelBackgroundView.layer.borderColor = UIColor.white.cgColor
+        labelBackgroundView.layer.borderWidth = 1.0
+        labelBackgroundView.layer.cornerRadius = 3.0
+        labelBackgroundView.layer.shadowColor = UIColor.black.withAlphaComponent(0.2).cgColor
         labelBackgroundView.layer.shadowOpacity = 0.8
-        labelBackgroundView.layer.shadowRadius = 1.0
-        labelBackgroundView.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
-        labelBackgroundView.layer.masksToBounds = false;
+        labelBackgroundView.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+        labelBackgroundView.layer.masksToBounds = true
     
     }
 

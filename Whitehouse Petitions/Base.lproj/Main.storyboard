@@ -52,7 +52,7 @@
                                         <constraint firstItem="hgX-ip-YqX" firstAttribute="top" secondItem="6DG-vS-DqU" secondAttribute="top" constant="10" id="bUf-nd-hWX"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.90727732901645797" green="0.90727732901645797" blue="0.90727732901645797" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.001050715334713459" green="0.47925478219985962" blue="0.9988587498664856" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="labelBackgroundView" destination="hgX-ip-YqX" id="MgN-1s-3DX"/>
                                     <outlet property="titleLabel" destination="I4Y-xY-giv" id="Eyc-UZ-ue2"/>
